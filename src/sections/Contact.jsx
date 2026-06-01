@@ -75,7 +75,7 @@ export default function Contact() {
                       <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-neon-purple/80">
                         {item.label}
                       </span>
-                      <span className="mt-1 block truncate text-base font-medium text-white group-hover:text-gradient sm:text-lg">
+                      <span className="mt-1 block break-all text-sm font-medium text-white group-hover:text-gradient sm:break-normal sm:text-base">
                         {item.value}
                       </span>
                     </span>

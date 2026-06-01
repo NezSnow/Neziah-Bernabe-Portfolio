@@ -107,19 +107,19 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="section-padding relative z-10 pb-20 pt-28 md:pb-28 md:pt-32"
+      className="section-padding relative z-10 pb-20 pt-20 md:pb-28 md:pt-32"
     >
       <div className="mx-auto max-w-7xl">
         <div className="glass-panel relative overflow-hidden rounded-[28px] p-6 sm:p-10 md:p-12 lg:p-14">
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-purple/10 via-transparent to-neon-blue/10" />
 
-          <div className="relative grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14">
-            <div>
+          <div className="relative grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14">
+            <div className="order-last lg:order-first">
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="flex flex-wrap gap-2"
+                className="flex flex-wrap justify-center gap-2 lg:justify-start"
               >
                 <span className="rounded-full border border-neon-purple/35 bg-neon-purple/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-neon-purple/95 sm:text-[11px]">
                   Creative Technologist
@@ -147,7 +147,7 @@ export default function Hero() {
 
                 <div>
                   <motion.h1
-                    className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+                    className="text-center text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-left lg:text-7xl"
                     initial={{ opacity: 0, y: 24 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.08, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
@@ -157,7 +157,7 @@ export default function Hero() {
                   </motion.h1>
 
                   <motion.p
-                    className="mt-5 max-w-xl text-lg text-white/75 sm:text-xl"
+                    className="mt-5 max-w-xl text-center text-lg text-white/75 sm:text-xl lg:text-left"
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.16, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -165,7 +165,7 @@ export default function Hero() {
                     Creative Technologist & Front End Developer
                   </motion.p>
                   <motion.p
-                    className="mt-3 max-w-lg text-sm leading-relaxed text-white/50 sm:text-base"
+                    className="mt-3 max-w-lg text-center text-sm leading-relaxed text-white/50 sm:text-base lg:text-left"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.24, duration: 0.55 }}
@@ -176,7 +176,7 @@ export default function Hero() {
               </div>
 
               <motion.div
-                className="mt-8 flex flex-wrap gap-2"
+                className="mt-8 flex flex-wrap justify-center gap-2 lg:justify-start"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.28, duration: 0.55 }}
@@ -196,7 +196,7 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                className="mt-6 flex flex-wrap gap-2"
+                className="mt-6 flex flex-wrap justify-center gap-2 lg:justify-start"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.45, duration: 0.5 }}
@@ -217,7 +217,7 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                className="mt-10 flex flex-wrap gap-4"
+                className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start"
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.55, duration: 0.55 }}
@@ -241,7 +241,7 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            <motion.div style={{ y }} className="relative mx-auto w-full max-w-md lg:mx-0 lg:ml-auto">
+            <motion.div style={{ y }} className="relative order-first mx-auto w-full max-w-xs sm:max-w-sm lg:order-last lg:mx-0 lg:ml-auto lg:max-w-md">
               <motion.div
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
